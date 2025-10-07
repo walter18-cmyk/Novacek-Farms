@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novacek Family Farms — Organic Pinto Beans</title>
+  <style>
+:root{--bg:#f8fafc;--card:#ffffff;--border:#e5e7eb;--text:#0f172a;--muted:#475569;--brand:#166534}
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(#fff,#f7fafb);color:var(--text)}
+a{color:inherit}.container{max-width:1080px;margin:0 auto;padding:24px}
+.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 24px}
+.brand{display:flex;align-items:center;gap:12px}.brand-badge{width:36px;height:36px;border-radius:14px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700}
+.brand-sub{font-size:12px;color:#64748b;margin-top:-2px}.nav a{padding:8px 12px;border-radius:10px;text-decoration:none}.nav a:hover{background:#f3f4f6}
+.footer{border-top:1px solid var(--border);background:rgba(255,255,255,.7)}.footer .container{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;color:#475569;font-size:14px}
+.grid{display:grid;gap:24px}.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.pill{display:inline-flex;align-items:center;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 12px;font-size:12px;margin-right:6px;margin-bottom:6px}
+.btn{display:inline-block;padding:12px 18px;border-radius:16px;text-decoration:none;font-weight:600}.btn-primary{background:var(--brand);color:#fff;box-shadow:0 3px 10px rgba(22,101,52,.25)}.btn-primary:hover{box-shadow:0 5px 14px rgba(22,101,52,.35)}
+.btn-ghost{background:#fff;border:1px solid var(--border)}.h1{font-size:40px;line-height:1.1;font-weight:900;margin:0;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.h2{font-size:28px;font-weight:800;margin:0 0 8px}.h3{font-size:18px;font-weight:700;margin:0 0 6px}.muted{color:#e2e8f0}.section{display:none}.section.active{display:block}
+.list{padding-left:18px}.list li{margin:6px 0}.lead{font-size:16px;color:var(--muted)}.price{font-size:28px;font-weight:800;margin:6px 0 8px}.small{font-size:12px;color:#64748b}
+.hero-bg{position:relative;min-height:56vh;border-radius:0 0 24px 24px;overflow:hidden;border-bottom:1px solid var(--border)}
+.hero-bg .hero-image{position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;transform:scale(1.02)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.45));}
+.hero-content{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:56px 24px;display:flex;flex-direction:column;gap:16px}
+.hero-pills .pill{background:rgba(255,255,255,.9)}.hero-cta{display:flex;gap:12px;flex-wrap:wrap}@media (max-width:640px){.h1{font-size:30px}}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-badge">NF</div>
+        <div>
+          <div style="font-weight:700">Novacek Family Farms</div>
+          <div class="brand-sub">5th‑generation • All‑organic • East Grand Forks, MN</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#/home">Home</a>
+        <a href="#/story">Our Story</a>
+        <a href="#/shop">Shop Beans</a>
+        <a href="#/recipes">Recipes</a>
+        <a href="#/risk">Risk Notice & FAQ</a>
+        <a href="#/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-bg section active" id="home-hero" aria-label="Farm field hero image with headline">
+    <div class="hero-image"></div>
+    <div class="hero-content">
+      <h1 class="h1">Organic Pinto Beans, Grown by a 5th‑Generation Family Farm</h1>
+      <p class="lead" style="color:#f1f5f9">Minnesota‑grown, field‑cleaned, and handled with care. Honest food from people you can call by name.</p>
+      <div class="hero-pills">
+        <span class="pill">USDA Organic</span>
+        <span class="pill">Family‑Owned</span>
+        <span class="pill">Small‑Batch</span>
+        <span class="pill">Midwest Grown</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#/shop" class="btn btn-primary">Shop Pinto Beans</a>
+        <a href="#/story" class="btn btn-ghost">Meet the Novaceks</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="home" class="section" aria-labelledby="home-title">
+      <div class="grid grid-3">
+        <div class="card"><div class="h3">Why Pinto?</div><p class="lead">Pintos are hearty, versatile, and protein‑rich. They’re a staple for chili, refried beans, soups, and salads—and they store beautifully in the pantry.</p></div>
+        <div class="card"><div class="h3">Our Organic Promise</div><p class="lead">We follow certified‑organic practices: no synthetic fertilizers, no GMOs, and stewardship that keeps our soil healthy for future generations.</p></div>
+        <div class="card"><div class="h3">From Our Field to Your Table</div><p class="lead">We clean, inspect, and bag on the farm. Local pickup available; shipping options for 25‑lb and 50‑lb bags.</p></div>
+      </div>
+      <div class="card" style="margin-top:24px;background:#ecfdf5;border-color:#bbf7d0">
+        <div class="h3">What else we grow</div>
+        <p class="lead">Corn • Oats • Wheat • Soybeans • Pinto Beans • Kidney Beans</p>
+      </div>
+    </section>
+
+    <section id="story" class="section" aria-labelledby="story-title">
+      <h2 id="story-title" class="h2">Our Story</h2>
+      <p class="lead">We’re the Novaceks—farmers for five generations in East Grand Forks, Minnesota. What began as a few acres and a dream has grown into a diversified, certified‑organic operation focused on soil health and honest food. Our pinto beans carry the flavor of the Red River Valley and the pride of a family that’s been stewarding this land for decades.</p>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card"><div class="h3">How we farm</div>
+          <ul class="list">
+            <li>Crop rotations with small grains and legumes to build soil fertility naturally</li>
+            <li>Mechanical weed control and cover crops instead of synthetic herbicides</li>
+            <li>Conservation tillage and buffer strips to protect waterways</li>
+          </ul>
+        </div>
+        <div class="card"><div class="h3">Our values</div>
+          <ul class="list">
+            <li>Faith‑driven stewardship</li>
+            <li>Transparency from seed to bag</li>
+            <li>Supporting local families and schools with real, nourishing food</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="section" aria-labelledby="shop-title">
+      <h2 id="shop-title" class="h2">Shop Organic Pinto Beans</h2>
+      <p class="lead">Choose your bag size. We offer local pickup near East Grand Forks and ship within the contiguous U.S. Bulk orders for schools and co‑ops welcome.</p>
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card"><div class="h3">5‑lb Pantry Bag</div><div class="price">$18</div>
+          <ul class="list"><li>Great for first‑timers</li><li>Resealable</li><li>Approx. 12–14 servings</li></ul>
+          <a href="#/contact" class="btn btn-primary" style="margin-top:12px">Order / Ask about Pickup</a>
+        </div>
+        <div class="card"><div class="h3">25‑lb Family Bag</div><div class="price">$45</div>
+          <ul class="list"><li>Best value per pound</li><li>Ships in sturdy sack</li><li>Ideal for meal prep</li></ul>
+          <a href="#/contact" class="btn btn-primary" style="margin-top:12px">Order / Ask about Pickup</a>
+        </div>
+        <div class="card"><div class="h3">50‑lb Bulk Bag</div><div class="price">$80</div>
+          <ul class="list"><li>Restaurant / school size</li><li>Ask about wholesale</li><li>Pickup recommended</li></ul>
+          <a href="#/contact" class="btn btn-primary" style="margin-top:12px">Order / Ask about Pickup</a>
+        </div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <div class="h3">Shipping & Pickup</div>
+        <ul class="list">
+          <li>Local pickup: East Grand Forks, MN. We’ll coordinate a time after you place an order.</li>
+          <li>Shipping: Calculated by weight and destination at checkout (or via invoice).</li>
+          <li>Payment: Card, cash, or invoice for institutions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="recipes" class="section" aria-labelledby="recipes-title">
+      <h2 id="recipes-title" class="h2">Easy Pinto Bean Recipes</h2>
+      <p class="lead">Start with a basic pot of beans, then transform them into quick, family‑friendly meals.</p>
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card">
+          <div class="h3">Basic Pot of Pintos</div>
+          <ol class="list" style="padding-left:18px">
+            <li>Rinse 2 cups dried beans. Soak 6–8 hours (or quick‑soak by boiling 2 min, rest 1 hour).</li>
+            <li>Drain. Add fresh water (about 3× bean volume), onion, bay leaf. Bring to a boil.</li>
+            <li>Simmer gently 60–90 minutes until tender. Salt near the end.</li>
+          </ol>
+          <p class="small"><strong>Tip:</strong> Cook extra; they freeze well in 1–2 cup portions.</p>
+        </div>
+        <div class="card">
+          <div class="h3">Refried Beans</div>
+          <ol class="list" style="padding-left:18px">
+            <li>Warm 2 tbsp oil in a skillet. Add 2 cups cooked pintos with some liquid.</li>
+            <li>Mash to your preferred texture; season with salt, cumin, and garlic.</li>
+            <li>Finish with a splash of lime.</li>
+          </ol>
+          <p class="small"><strong>Tip:</strong> Spread on tortillas, top with cheese, and crisp on a griddle.</p>
+        </div>
+        <div class="card">
+          <div class="h3">Hearty Chili</div>
+          <ol class="list" style="padding-left:18px">
+            <li>Brown ground beef or skip for vegetarian. Sauté onion and peppers.</li>
+            <li>Add tomatoes, spices, and 3 cups cooked pintos. Simmer 20–30 minutes.</li>
+            <li>Adjust seasoning; serve with cornbread.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="risk" class="section" aria-labelledby="risk-title">
+      <h2 id="risk-title" class="h2">Risk Notice & Food Information</h2>
+      <p class="lead">We want our food to be safe, delicious, and clearly labeled. Please review before purchasing.</p>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card">
+          <div class="h3">Allergens & Cross‑Contact</div>
+          <ul class="list">
+            <li>Product: 100% organic pinto beans. Naturally free of the top 9 allergens.</li>
+            <li>Processed and bagged on our farm with equipment dedicated to dry beans and small grains.</li>
+            <li>Despite careful cleaning, trace cross‑contact with other field crops (corn, wheat, oats, soybeans) is possible.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="h3">Preparation & Food Safety</div>
+          <ul class="list">
+            <li>Cook thoroughly. Soak and boil until tender (typically 60–90 minutes after soaking).</li>
+            <li>Store dried beans in a cool, dry place; use an airtight container after opening.</li>
+            <li>Small objects hazard: Inspect beans and rinse before cooking; keep uncooked beans away from young children.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card">
+          <div class="h3">Quality & Variability</div>
+          <ul class="list">
+            <li>Beans are an agricultural product; minor variation in size or color is natural and safe.</li>
+            <li>Occasional field debris may occur; please sort and rinse prior to cooking.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="h3">Returns & Questions</div>
+          <p class="lead">If something isn’t right, contact us within 14 days with your order number. We’ll make it right.</p>
+          <p class="small">This notice supports transparency and user safety; it does not replace professional dietary advice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="h2">Contact & Ordering</h2>
+      <p class="lead">Ready to order or have questions about wholesale, schools, or local pickup? Send us a message.</p>
+      <form class="card" onsubmit="event.preventDefault(); alert('This is a preview. Hook this to email or a backend in production.');">
+        <label style="display:block;margin-bottom:10px"><span>Name</span><br/><input placeholder="Your name" required/></label>
+        <label style="display:block;margin-bottom:10px"><span>Email</span><br/><input type="email" placeholder="you@example.com" required/></label>
+        <label style="display:block;margin-bottom:10px"><span>Message</span><br/><textarea placeholder="Tell us what you’d like to order or ask a question…"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send (demo)</button>
+        <p class="small" style="margin-top:8px">Submitting is a demo in this preview. Hook this form to your email or backend in production.</p>
+      </form>
+      <div class="card" style="margin-top:12px"><p><strong>Novacek Family Farms</strong></p><p>East Grand Forks, Minnesota</p><p>Local pickup by appointment • Shipping available</p></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap">
+      <div>© <span id="year"></span> Novacek Family Farms • Certified organic. Crops we grow: corn, oats, wheat, soybeans, pinto beans, kidney beans.</div>
+      <div>Built for clarity and accessibility. <a href="#/risk" style="text-decoration:underline">Read our Risk Notice</a>.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+const sections = {
+  "/home": document.getElementById("home"),
+  "/story": document.getElementById("story"),
+  "/shop": document.getElementById("shop"),
+  "/recipes": document.getElementById("recipes"),
+  "/risk": document.getElementById("risk"),
+  "/contact": document.getElementById("contact"),
+};
+function setActive(path){ if(!sections[path]) path="/home"; for(const k in sections){ sections[k].classList.remove("active"); } sections[path].classList.add("active"); window.scrollTo({top:0,behavior:"instant"}); }
+window.addEventListener("hashchange",()=>{ const p=location.hash.replace("#","")||"/home"; setActive(p); });
+setActive(location.hash.replace("#","")||"/home");
+</script>
+</body>
+</html>
